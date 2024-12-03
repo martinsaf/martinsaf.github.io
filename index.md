@@ -94,7 +94,7 @@ end
 
 ### Small image
 
-![Octocat](scanner-preview.png)
+![preview](scanner-preview.png)
 
 ### Large image
 
