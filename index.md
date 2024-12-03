@@ -92,7 +92,7 @@ end
   - level 2 item
 - level 1 item
 
-### Small image
+### nmap_scanner script preview
 
 ![preview](scanner-preview.png)
 
