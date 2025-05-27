@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<!-- Metadados básicos do documento -->
+		<meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+		<!-- <link rel="stylesheet" href="style2.css"> --> <!-- Link para o arquivo CSS externo -->
+		<link rel="stylesheet" href="style.css">
+		<title>Francisco Martins - Portfólio</title> <!-- Título da página exibido na aba do navegador -->
+	</head>
+
+	<body>
+		<!-- Cabeçalho do site (comum a todas as páginas) -->
+		<div class="cabecalho">
+			<h2 class="logo">
+				<a href="index.html">
+					<span>FM</span> Francisco Martins - Portfólio
+				</a>
+			</h2>
+		</div>
+    
+		<!-- Menu de navegação principal (comum a todas as páginas) -->
+		<div class="menu">
+			<ul>
+				<li><a href="index.html" class="menu-link">Início</a></li>
+				<li><a href="autor.html" class="menu-link">Autor</a></li>
+				<li><a href="itens.html" class="menu-link">Projetos</a></li>
+				<li><a href="contactos.html" class="menu-link">Contactos</a></li>
+			</ul>
+		</div>
+		
+		<!-- Conteúdo principal da página de detalhes dos projetos -->
+		<div class="conteudo-detalhes">
+		
+			<!-- Artigo do Projeto 1: easyBooking -->
+			<article class="detalhes-item" id="easyBooking">
+				<h1>easyBooking</h1>
+				
+				<!-- Galeria de imagens do projeto -->
+				<div class="galeria-projeto">
+					<!-- Imagem principal (clicável para lightbox) -->
+					<div class="imagem-destaque">
+						<a href="#img1">
+							<img src="imgs/easyBooking/easyBooking-prisma-studio.png" alt="Interface do easyBooking com prisma studio." loading="lazy">
+						</a>
+					</div>
+					
+					<!-- Miniaturas para navegação na galeria -->
+					<div class="miniaturas">
+						<a href="#img2" class="miniatura ativa">
+							<img src="imgs/easyBooking/prisma-studio-properties.png" alt="Interface das propriedades no prisma studio." loading="lazy">
+						</a>
+						<a href="#img3" class="miniatura">
+							<img src="imgs/easyBooking/easyBooking-token.png" alt="JWT identificador do utilizador na sessao." loading="lazy">
+						</a>
+						<a href="#img4" class="miniatura">
+							<img src="imgs/easyBooking/easyBooking-authorization.png" alt="Configuracao da autorizacao no Postman para o utilizador." loading="lazy">
+						</a>
+						<a href="#img5" class="miniatura">
+							<img src="imgs/easyBooking/easyBooking-createReview.png" alt="Criacao de uma review do utilizador com sessao iniciada." loading="lazy">
+						</a>
+						<a href="#img6" class="miniatura">
+							<img src="imgs/easyBooking/prisma-studio-check-review.png" alt="Verificacao da review criada no prisma studio." loading="lazy">
+						</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 1 (só aparece quando ativado via âncora #img1) -->
+				<div class="lightbox" id="img1">
+					<!-- Botão para fechar o lightbox -->
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/easyBooking-prisma-studio.png" alt="Interface do easyBooking com prisma studio." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface no prisma studio.</div>
+						<a href="#img2" class="proxima">&#10095;</a> <!-- Botão para próxima imagem -->
+					</div>
+				</div>
+
+
+				<!-- Lightbox para a imagem 2 -->
+				<div class="lightbox" id="img2">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/prisma-studio-properties.png" alt="Interface das propriedades no prisma studio." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface das propriedades no prisma studio.</div>
+						<a href="#img1" class="anterior">&#10094;</a>
+						<a href="#img3" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 3 -->
+				<div class="lightbox" id="img3">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/easyBooking-token.png" alt="JWT identificador do utilizador na sessao." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">JWT identificador do utilizador na sessao.</div>
+						<a href="#img2" class="anterior">&#10094;</a>
+						<a href="#img4" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 4 -->
+				<div class="lightbox" id="img4">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/easyBooking-authorization.png" alt="Configuracao da autorizacao no Postman para o utilizador." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Configuracao da autorizacao no Postman para o utilizador.</div>
+						<a href="#img3" class="anterior">&#10094;</a>
+						<a href="#img5" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 5 -->
+				<div class="lightbox" id="img5">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/easyBooking-createReview.png" alt="Criacao de uma review do utilizador com sessao iniciada." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Criacao de uma review do utilizador com sessao iniciada.</div>
+						<a href="#img4" class="anterior">&#10094;</a>
+						<a href="#img6" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 6 -->
+				<div class="lightbox" id="img6">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/easyBooking/prisma-studio-check-review.png" alt="Verificacao da review criada no prisma studio." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Verificacao da review anteriormente criada no prisma studio.</div>
+						<a href="#img5" class="anterior">&#10094;</a>
+					</div>
+				</div>
+				
+				<!-- Informações detalhadas sobre o projeto -->
+				<div class="info-item">
+					<!-- Metadados do projeto (categoria e data) -->
+					<div class="meta-item">
+						<span class="categoria">Desenvolvimento Web</span>
+						<span class="data">Agosto 2024</span>
+					</div>
+					
+					<!-- Descrição do projeto -->
+					<h2>Descrição</h2>
+					<p>Este projeto é uma API baseada em Node.js para gestão de reservas. 
+					Permite aos utilizadores criar, atualizar, recuperar e eliminar comodidades, 
+					reservas, anfitriões, propriedades, avaliações e utilizadores. A API utiliza 
+					o Prisma como ORM para lidar com interações de base de dados, suportando 
+					relações complexas, como ligações muitos para muitos entre propriedades e 
+					comodidades.</p>
+					
+					<!-- Lista de tecnologias utilizadas -->
+					<h2>Tecnologias</h2>
+					<ul class="lista-tecnologias">
+						<li>HTML</li>
+						<li>JavaScript</li>
+						<li>SQL</li>
+					</ul>
+					
+					<!-- Links de ação (navegação e GitHub) -->
+					<div class="acoes">
+						<a href="https://github.com/martinsaf/easyBooking" target="_blank" class="botao">Ver Código no GitHub</a>
+						<a href="#lockSwap" class="botao secundario">Fim da Lista</a>
+						<a href="#recipesApp" class="botao">Próximo projeto<span class="seta">→</span></a>
+					</div>
+				</div>
+				
+			<!-- Artigo do Projeto 2: recipesApp -->
+			</article>
+			
+			<article class="detalhes-item" id="recipesApp">
+				<h1>recipesApp</h1>
+				
+				<!-- Galeria de imagens do projeto -->
+				<div class="galeria-projeto">
+					<!-- Imagem principal (clicável) -->
+					<div class="imagem-destaque">
+						<a href="#img7">
+							<img src="imgs/recipesapp/recipesapp-index.png" alt="Imagem do projeto" loading="lazy">
+						</a>
+					</div>
+					
+					<!-- Miniaturas -->
+					<div class="miniaturas">
+						<a href="#img8" class="miniatura ativa">
+							<img src="imgs/recipesapp/recipesapp-recipe.png" alt="Interface da receita selecionada." loading="lazy">
+						</a>
+						
+						<a href="#img9" class="miniatura">
+							<img src="imgs/recipesapp/recipeapp-responsiveness.png" alt="Responsividade na pagina da receita selecionada.">
+						</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 7 -->
+				<div class="lightbox" id="img7">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/recipesapp/recipesapp-index.png" alt="Interface principal." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface principal.</div>
+						<a href="#img8" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 8 -->
+				<div class="lightbox" id="img8">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/recipesapp/recipesapp-recipe.png" alt="Interface da receita selecionada." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface da receita selecionada.</div>
+						<a href="#img7" class="anterior">&#10094;</a>
+						<a href="#img9" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 9 -->
+				<div class="lightbox" id="img9">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/recipesapp/recipeapp-responsiveness.png" alt="Responsividade na pagina da receita selecionada." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Responsividade na pagina da receita selecionada.</div>
+						<a href="#img8" class="anterior">&#10094;</a>
+					</div>
+				</div>
+				
+				<!-- Informações detalhadas sobre o projeto -->
+				<div class="info-item">
+					<div class="meta-item">
+						<span class="categoria">Desenvolvimento Web</span>
+						<span class="data">Agosto 2024</span>
+					</div>
+					
+					<h2>Descrição</h2>
+					<p>Este aplicativo React foi concebido para exibir e gerir uma lista de receitas. 
+					A aplicação oferece funcionalidades como a pesquisa de receitas, a exibição de informações 
+					detalhadas sobre cada receita e a categorização das receitas por vários rótulos. 
+					O projeto utiliza o Chakra UI para estilo e layout.</p>
+					
+					<h2>Tecnologias</h2>
+					<ul class="lista-tecnologias">
+						<li>HTML</li>
+						<li>JavaScript</li>
+					</ul>
+					
+					<div class="acoes">
+						<a href="#easyBooking" class="botao"><span>←</span>Projeto anterior</a>
+						<a href="https://github.com/martinsaf/recipesApp" target="_blank" class="botao">Ver Código no GitHub</a>
+						<a href="itens.html" class="botao secundario">Voltar à Lista</a>
+						<a href="#event-management-app" class="botao">Proximo Projeto<span class="seta">→</span></a>
+					</div>
+				</div>
+			</article>
+			
+			<!-- Artigo do Projeto 3: event-management-app -->
+			<article class="detalhes-item" id="event-management-app">
+				<h1>event-management-app</h1>
+				
+				<!-- Galeria de imagens do projeto -->
+				<div class="galeria-projeto">
+					<!-- Imagem principal (clicável) -->
+					<div class="imagem-destaque">
+						<a href="#img10">
+							<img src="imgs/eventMan/event-man-index.png" alt="Imagem do projeto" loading="lazy">
+						</a>
+					</div>
+					
+					<!-- Miniaturas -->
+					<div class="miniaturas">
+						<a href="#img11" class="miniatura ativa">
+							<img src="imgs/eventMan/event-man-responsiveness.png" alt="Responsividade Interface principal." loading="lazy">
+						</a>
+						
+						<a href="#img12" class="miniatura">
+							<img src="imgs/eventMan/event-man-add-event.png" alt="Campos existentes quando adionar um evento." loading="lazy">
+						</a>
+						
+						<a href="#img13" class="miniatura">
+							<img src="imgs/eventMan/event-man-event-view.png" alt="Interface do evento criado." loading="lazy">
+						</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 10 -->
+				<div class="lightbox" id="img10">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/eventMan/event-man-index.png" alt="Interface principal." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface principal.</div>
+						<a href="#img11" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 11 -->
+				<div class="lightbox" id="img11">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/eventMan/event-man-responsiveness.png" alt="Responsividade Interface principal." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Responsividade Interface principal.</div>
+						<a href="#img10" class="anterior">&#10094;</a>
+						<a href="#img12" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 12 -->
+				<div class="lightbox" id="img12">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/eventMan/event-man-add-event.png" alt="Campos existentes quando adionar um evento." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Campos existentes quando adionar um evento.</div>
+						<a href="#img11" class="anterior">&#10094;</a>
+						<a href="#img13" class="proxima">&#10095;</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 13 -->
+				<div class="lightbox" id="img13">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/eventMan/event-man-event-view.png" alt="Interface do evento criado." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Interface do evento criado.</div>
+							<a href="#img12" class="anterior">&#10094;</a>
+					</div>
+				</div>
+				
+				<!-- Informações detalhadas sobre o projeto -->
+				<div class="info-item">
+					<div class="meta-item">
+						<span class="categoria">Desenvolvimento Web</span>
+						<span class="data">Julho 2024</span>
+					</div>
+					
+					<h2>Descrição</h2>
+					<p>Uma aplicação React avançada para gerir eventos, incluindo adicionar, editar e eliminar eventos 
+					com categorias e utilizadores. Um projeto para gerir e exibir eventos usando React e Chakra UI. 
+					Este projeto demonstra conceitos avançados do React, incluindo contexto para gestão de estado, 
+					encaminhamento com React Router e tratamento de formulários com validação.</p>
+					
+					<h2>Tecnologias</h2>
+					<ul class="lista-tecnologias">
+						<li>HTML</li>
+						<li>JavaScript</li>
+					</ul>
+					
+					<div class="acoes">
+						<a href="#recipesApp" class="botao"><span class="seta">←</span>Projeto Anterior</a>
+						<a href="https://github.com/martinsaf/event-management-app" target="_blank" class="botao">Ver Código no GitHub</a>
+						<a href="itens.html" class="botao secundario">Voltar à Lista</a>
+						<a href="#nmap_scanner" class="botao">Proximo Projeto<span class="seta">→</span></a>
+					</div>
+				</div>
+			</article>
+			
+			<!-- Artigo do Projeto 4: nmap_scanner -->
+			<article class="detalhes-item" id="nmap_scanner">
+				<h1>nmap_scanner</h1>
+				
+				<!-- Galeria de imagens do projeto -->
+				<div class="galeria-projeto">
+					<!-- Imagem principal (clicável) -->
+					<div class="imagem-destaque">
+						<a href="#img14">
+							<img src="imgs/nmap_scanner/scanner-preview.png" alt="Pré-visualização do resultado da utilização do programa" loading="lazy">
+						</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 14 -->
+				<div class="lightbox" id="img14">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/nmap_scanner/scanner-preview.png" alt="Pré-visualização do resultado da utilização do programa." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Pré-visualização do resultado da utilização do programa.</div>
+					</div>
+				</div>
+				
+				<!-- Informações detalhadas sobre o projeto -->
+				<div class="info-item">
+					<div class="meta-item">
+						<span class="categoria">Desenvolvimento Web</span>
+						<span class="data">Dezembro 2024</span>
+					</div>
+					
+					<h2>Descrição</h2>
+					<p>Este script Python utiliza o nmap para executar scans de rede direcionados, 
+					com foco no TCP e scans limitados de portas UDP para identificar e alertar sobre possíveis 
+					vulnerabilidades nos serviços de rede. Foi concebido para avaliar rapidamente a segurança de 
+					serviços comuns como HTTP, FTP e SMTP, analisando as versões de serviço em relação a 
+					vulnerabilidades conhecidas.</p>
+					
+					<h2>Tecnologias</h2>
+					<ul class="lista-tecnologias">
+						<li>Python</li>
+						<li>Nmap/python-nmap</li>
+					</ul>
+					
+					<div class="acoes">
+						<a href="#event-management-app" class="botao"><span>←</span>Projeto Anterior</a>
+						<a href="https://github.com/martinsaf/nmap_scanner" target="_blank" class="botao">Ver Código no GitHub</a>
+						<a href="itens.html" class="botao secundario">Voltar à Lista</a>
+						<a href="#lockSwap" class="botao">Proximo Projeto<span>→</span></a>
+					</div>
+				</div>
+			</article>
+			
+			<!-- Artigo do Projeto 5: lockSwap -->
+			<article class="detalhes-item" id="lockSwap">
+				<h1>lockSwap</h1>
+				
+				<!-- Galeria de imagens do projeto -->
+				<div class="galeria-projeto">
+					<!-- Imagem principal (clicável) -->
+					<div class="imagem-destaque">
+						<a href="#img15">
+							<img src="imgs/lockSwap/packets-change.png" alt="Pré-visualização da transferencia de ficheiros no Wireshark." loading="lazy">
+						</a>
+					</div>
+				</div>
+				
+				<!-- Lightbox para a imagem 15 -->
+				<div class="lightbox" id="img15">
+					<a href="#close" class="fechar-lightbox"></a>
+					<div class="lightbox-content">
+						<img src="imgs/lockSwap/packets-change.png" alt="Pré-visualização da transferencia de ficheiros no Wireshark." class="lightbox-img" loading="lazy">
+						<div class="legenda-imagem">Pré-visualização da transferencia de ficheiros no Wireshark.</div>
+					</div>
+				</div>
+				
+				<!-- Informações detalhadas sobre o projeto -->
+				<div class="info-item">
+					<div class="meta-item">
+						<span class="categoria">Desenvolvimento Web</span>
+						<span class="data">Dezembro 2024</span>
+					</div>
+					
+					<h2>Descrição</h2>
+					<p>Transfira ficheiros em segurança entre um cliente e um servidor utilizando Python e 
+					encriptação. Os ficheiros são encriptados antes da transferência e desencriptados após o 
+					recebimento.</p>
+					
+					<h2>Tecnologias</h2>
+					<ul class="lista-tecnologias">
+						<li>Python</li>
+						<li>Cryptography</li>
+					</ul>
+					
+					<div class="acoes">
+						<a href="#nmap_scanner" class="botao"><span>←</span>Projeto Anterior</a>
+						<a href="https://github.com/martinsaf/lockSwap" target="_blank" class="botao">Ver Código no GitHub</a>
+						<a href="itens.html" class="botao secundario">Voltar à Lista</a>
+					</div>
+				</div>
+			</article>
+		</div>
+		
+		<!-- Rodapé do site (comum a todas as páginas) -->
+			 <div class="rodape">
+				<p>&copy; 2025 Francisco Martins. Trabalho de ITW.</p>
+			</div>
+	</body>
+</html>

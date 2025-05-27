@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	 <!-- Metadados básicos do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <!-- <link rel="stylesheet" href="style2.css"> --> <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+	<title>Francisco Martins - Portfólio</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+	<!-- Cabeçalho do site -->
+    <div class="cabecalho">
+        <h2 class="logo">
+			<a href="index.html">
+				<span>FM</span> Francisco Martins - Portfólio
+			</a>
+		</h2>
+	</div>
+	
+	<!-- Menu de navegação principal -->
+    <div class="menu">
+        <ul>
+            <li><a href="index.html" class="menu-link">Início</a></li>
+            <li><a href="autor.html" class="menu-link">Autor</a></li>
+            <li><a href="itens.html" class="menu-link">Projetos</a></li>
+            <li><a href="contactos.html" class="menu-link">Contactos</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner de Destaque -->
+    <div class="banner">
+        <div class="banner-conteudo">
+            <h1>Desenvolvedor Full-Stack</h1>
+            <p>Criando soluções robustas e otimizadas com tecnologias modernas</p>
+            <a href="itens.html" class="botao">Ver Projetos</a> <!-- Botão para a página de projetos -->
+        </div>
+    </div>
+
+    <!-- Sobre Mim Resumido -->
+    <div class="sobre-resumo">
+        <div class="conteudo">
+            <h2>Sobre Mim</h2>
+            <p>Estudante de Engenharia Informática com foco em desenvolvimento web full-stack. Apaixonado por criar soluções eficientes e compreender os conceitos por trás do código.</p>
+            <a href="autor.html" class="botao secundario">Saber Mais</a> <!-- Botão para página detalhada -->
+        </div>
+    </div>
+
+    <!-- Destaque de Projetos (resumida) -->
+    <div class="destaque-projetos">
+        <div class="conteudo">
+            <h2>Projetos</h2>
+			
+            <!-- Grid de cards de projetos -->
+			<div class="grid-projetos">
+				<!-- Card do Projeto 1: easyBooking -->
+				<div class="card-projeto">
+					<div class="icone-projeto">
+						<svg viewBox="0 0 15 15" class="icone">
+							<!-- Ícone SVG para o projeto -->
+							<svg fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 0V5M11.5 0V5M3 7.5H6M12 7.5H9M3 10.5H6M9 10.5H12M1.5 2.5H13.5C14.0523 2.5 14.5 2.94772 14.5 3.5V13.5C14.5 14.0523 14.0523 14.5 13.5 14.5H1.5C0.947716 14.5 0.5 14.0523 0.5 13.5V3.5C0.5 2.94772 0.947715 2.5 1.5 2.5Z" stroke="#000000"></path></svg>
+						</svg>
+					</div>
+					<h3>easyBooking</h3>
+					<p>API para gestão de reservas com Node.js e Prisma</p>
+					<a href="itens.html#easyBooking" class="botao pequeno">Detalhes</a>
+				</div>
+
+				<!-- Card do Projeto 2: recipesApp -->
+				<div class="card-projeto">
+					<div class="icone-projeto">
+						<svg viewBox="0 0 24 24" class="icone">
+							<!-- Ícone SVG para o projeto -->
+							<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 346.229 346.229" xml:space="preserve"><path d="M48.927,8v289.376c0,4.418-3.582,8-8,8c-4.418,0-8-3.582-8-8V8c0-4.418,3.582-8,8-8C45.345,0,48.927,3.582,48.927,8z M313.302,13.248v278.881c0,4.418-3.582,8-8,8H157.681v38.1c0,2.71-1.372,5.236-3.646,6.711c-2.273,1.475-5.139,1.699-7.615,0.594 l-19.782-8.829l-19.799,8.83c-1.041,0.464-2.152,0.694-3.258,0.694c-1.523,0-3.039-0.435-4.355-1.289 c-2.273-1.476-3.645-4.001-3.645-6.711v-38.1H72.9c-4.418,0-8-3.582-8-8V13.248c0-4.418,3.582-8,8-8h232.402 C309.72,5.248,313.302,8.829,313.302,13.248z M141.681,300.128h-30.1v25.773l11.801-5.263c2.074-0.925,4.443-0.926,6.519,0.001 l11.78,5.258V300.128z M297.302,21.248H80.9v262.881h68.782h147.621V21.248z M118.631,138.656c0-17.121,13.929-31.049,31.05-31.049 c2.759,0,5.481,0.363,8.106,1.071c5.423-9.374,15.479-15.388,26.85-15.388c11.161,0,21.324,6.118,26.799,15.402 c2.64-0.717,5.379-1.085,8.156-1.085c17.121,0,31.05,13.929,31.05,31.049c0,17.121-13.929,31.05-31.05,31.05 c-0.649,0-1.295-0.02-1.937-0.059v34.44c0,4.418-3.582,8-8,8h-50.034c-4.418,0-8-3.582-8-8v-34.44 c-0.643,0.04-1.29,0.059-1.94,0.059C132.56,169.706,118.631,155.777,118.631,138.656z M134.631,138.656 c0,8.298,6.751,15.05,15.05,15.05c2.275,0,4.456-0.492,6.483-1.463c2.479-1.188,5.394-1.02,7.72,0.445 c2.326,1.465,3.737,4.021,3.737,6.77v36.63h34.034v-36.63c0-2.749,1.412-5.305,3.738-6.77c2.326-1.464,5.242-1.632,7.72-0.444 c2.025,0.971,4.205,1.463,6.479,1.463c8.299,0,15.05-6.751,15.05-15.05s-6.751-15.049-15.05-15.049 c-2.899,0-5.712,0.825-8.135,2.385c-2.197,1.416-4.946,1.669-7.366,0.677c-2.418-0.991-4.2-3.101-4.772-5.651 c-1.524-6.795-7.699-11.728-14.682-11.728c-6.98,0-13.156,4.933-14.684,11.73c-0.573,2.549-2.355,4.658-4.773,5.648 c-2.418,0.991-5.167,0.738-7.364-0.677c-2.422-1.56-5.235-2.385-8.135-2.385C141.382,123.606,134.631,130.357,134.631,138.656z"></path></svg>
+						</svg>
+					</div>
+					<h3>recipesApp</h3>
+					<p>Aplicativo React para gerenciamento de receitas</p>
+					<a href="itens.html#recipesApp" class="botao pequeno">Detalhes</a>
+				</div>
+
+				<!-- Card do Projeto 3: Event Manager -->
+				<div class="card-projeto">
+					<div class="icone-projeto">
+						<svg viewBox="0 0 24 24" class="icone">
+							<!-- Ícone SVG para o projeto -->
+							<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 190" enable-background="new 0 0 256 190" xml:space="preserve"><path d="M48.12,27.903C48.12,13.564,59.592,2,74.023,2c14.339,0,25.903,11.564,25.903,25.903 C99.834,42.335,88.27,53.806,74.023,53.806C59.684,53.806,48.12,42.242,48.12,27.903z M191,139h-47V97c0-20.461-17.881-37-38-37H43 C20.912,60,1.99,79.14,2,98v77c-0.026,8.533,6.001,12.989,12,13c6.014,0.011,12-4.445,12-13v-75h8v88h78v-88h8l0.081,50.37 c-0.053,8.729,5.342,12.446,10.919,12.63h60C207.363,163,207.363,139,191,139z M231.9,27.291c2.322,0,4.214,1.892,4.214,4.214 v13.243c0,2.322-1.892,4.214-4.214,4.214s-4.214-1.892-4.214-4.214V31.505C227.686,29.183,229.578,27.291,231.9,27.291 M240.843,39.502v5.332c0,4.902-4.042,8.943-8.943,8.943c-4.902,0-8.943-4.042-8.943-8.943v-5.332h-34.913v5.332 c0,4.901-4.042,8.943-8.943,8.943c-4.988,0-8.943-4.042-8.943-8.943v-5.332H157v22.186v65.355h97V61.774V39.502H240.843z M248.754,61.774v40.847l-19.262,19.004h-67.246V61.774H248.754L248.754,61.774z M179.1,27.291c2.322,0,4.214,1.892,4.214,4.214 v13.243c0,2.322-1.892,4.214-4.214,4.214c-2.322,0-4.214-1.892-4.214-4.214V31.505C174.886,29.183,176.779,27.291,179.1,27.291 M231.9,27.291c2.322,0,4.214,1.892,4.214,4.214v13.243c0,2.322-1.892,4.214-4.214,4.214s-4.214-1.892-4.214-4.214V31.505 C227.686,29.183,229.578,27.291,231.9,27.291 M232.197,81.984l-8.254-8.278l-23.221,23.154l-12.46-12.46l-8.266,8.266l20.713,20.714 L232.197,81.984z"></path></svg>
+						</svg>
+					</div>
+					<h3>Event Manager</h3>
+					<p>Aplicação React para gestão de eventos</p>
+					<a href="itens.html#event-management-app" class="botao pequeno">Detalhes</a>
+				</div>
+			
+				<!-- Card do Projeto 4: nmap_scanner -->
+				<div class="card-projeto">
+					<div class="icone-projeto">
+						<svg viewBox="0 0 24 24" class="icone">
+							<!-- Ícone SVG para o projeto -->
+							<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><path style="fill:#DEDDE0;" d="M65.038,442.286C29.119,442.286,0,413.167,0,377.249v-77.492c0-35.919,29.119-65.038,65.038-65.038 h381.924c35.922,0,65.038,29.119,65.038,65.038v77.492c0,35.919-29.116,65.038-65.038,65.038H65.038z"></path> <path style="fill:#616064;" d="M470.275,237.794c-9.786-5.239-411.995-168.08-411.995-168.08L42.598,108.15l310.24,126.569H65.038 C29.119,234.719,0,263.838,0,299.757v59.503h512v-59.503c0-13.951-4.107-27.086-11.876-37.469 C495.482,256.082,491.243,249.017,470.275,237.794z"></path> <path d="M256,149.916C155.82,109.205,58.279,69.714,58.279,69.714L42.598,108.15L256,195.21V149.916z"></path> <path style="fill:#BDBCC1;" d="M256,234.719H65.038C29.119,234.719,0,263.838,0,299.757v77.492 c0,35.919,29.119,65.038,65.038,65.038H256V234.719z"></path> <path d="M256,234.719H65.038C29.119,234.719,0,263.838,0,299.757v59.503h256V234.719z"></path> <circle style="fill:#00D7DF;" cx="387.459" cy="296.988" r="20.757"></circle> <g> <circle style="fill:#FFFFFF;" cx="299.824" cy="296.988" r="20.757"></circle> <circle style="fill:#FFFFFF;" cx="212.176" cy="296.988" r="20.757"></circle> </g> <circle style="fill:#D80027;" cx="124.541" cy="296.988" r="20.757"></circle></svg>
+						</svg>
+					</div>
+					<h3>nmap_scanner</h3>
+					<p>Python Script para scans TCP e verificações UDP limitadas.</p>
+					<a href="itens.html#nmap_scanner" class="botao pequeno">Detalhes</a>
+				</div>
+				
+				<!-- Card do Projeto 5: lockSwap -->
+				<div class="card-projeto">
+					<div class="icone-projeto">
+						<svg viewBox="0 0 24 24" class="icone">
+							<!-- Ícone SVG para o projeto -->
+							<svg fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16C9 16.5523 8.55229 17 8 17C7.44772 17 7 16.5523 7 16C7 15.4477 7.44772 15 8 15C8.55229 15 9 15.4477 9 16Z" fill="#1C274C"></path> <path d="M13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16Z" fill="#1C274C"></path> <path d="M16 17C16.5523 17 17 16.5523 17 16C17 15.4477 16.5523 15 16 15C15.4477 15 15 15.4477 15 16C15 16.5523 15.4477 17 16 17Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 8V9.30277C5.02317 9.31872 4.80938 9.33948 4.60825 9.36652C3.70814 9.48754 2.95027 9.74643 2.34835 10.3483C1.74643 10.9503 1.48754 11.7081 1.36652 12.6082C1.24996 13.4752 1.24998 14.5775 1.25 15.9451V16.0549C1.24998 17.4225 1.24996 18.5248 1.36652 19.3918C1.48754 20.2919 1.74643 21.0497 2.34835 21.6516C2.95027 22.2536 3.70814 22.5125 4.60825 22.6335C5.47522 22.75 6.57754 22.75 7.94513 22.75H16.0549C17.4225 22.75 18.5248 22.75 19.3918 22.6335C20.2919 22.5125 21.0497 22.2536 21.6517 21.6516C22.2536 21.0497 22.5125 20.2919 22.6335 19.3918C22.75 18.5248 22.75 17.4225 22.75 16.0549V15.9451C22.75 14.5775 22.75 13.4752 22.6335 12.6082C22.5125 11.7081 22.2536 10.9503 21.6517 10.3483C21.0497 9.74643 20.2919 9.48754 19.3918 9.36652C19.1906 9.33948 18.9768 9.31872 18.75 9.30277V8C18.75 4.27208 15.7279 1.25 12 1.25C8.27208 1.25 5.25 4.27208 5.25 8ZM12 2.75C9.10051 2.75 6.75 5.10051 6.75 8V9.25344C7.12349 9.24999 7.52152 9.24999 7.94499 9.25H16.0549C16.4783 9.24999 16.8765 9.24999 17.25 9.25344V8C17.25 5.10051 14.8995 2.75 12 2.75ZM4.80812 10.8531C4.07435 10.9518 3.68577 11.1322 3.40901 11.409C3.13225 11.6858 2.9518 12.0743 2.85315 12.8081C2.75159 13.5635 2.75 14.5646 2.75 16C2.75 17.4354 2.75159 18.4365 2.85315 19.1919C2.9518 19.9257 3.13225 20.3142 3.40901 20.591C3.68577 20.8678 4.07435 21.0482 4.80812 21.1469C5.56347 21.2484 6.56459 21.25 8 21.25H16C17.4354 21.25 18.4365 21.2484 19.1919 21.1469C19.9257 21.0482 20.3142 20.8678 20.591 20.591C20.8678 20.3142 21.0482 19.9257 21.1469 19.1919C21.2484 18.4365 21.25 17.4354 21.25 16C21.25 14.5646 21.2484 13.5635 21.1469 12.8081C21.0482 12.0743 20.8678 11.6858 20.591 11.409C20.3142 11.1322 19.9257 10.9518 19.1919 10.8531C18.4365 10.7516 17.4354 10.75 16 10.75H8C6.56459 10.75 5.56347 10.7516 4.80812 10.8531Z" fill="#1C274C"></path></svg>
+						</svg>
+					</div>
+					<h3>lockSwap</h3>
+					<p>Transfira ficheiros em segurança entre um cliente e um servidor utilizando Python e encriptação.</p>
+					<a href="itens.html#lockSwap" class="botao pequeno">Detalhes</a>
+				</div>
+			</div>
+			
+			<!-- Botão para ver todos os projetos -->
+            <div class="ver-todos">
+                <a href="itens.html" class="botao">Mais Sobre Todos</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de habilidades técnicas -->
+    <div class="habilidades">
+        <div class="conteudo">
+            <h2>Habilidades Técnicas</h2>
+			
+			 <!-- Lista de habilidades agrupadas por categoria -->
+            <div class="lista-habilidades">
+                <div class="habilidade">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Chakra UI</li>
+                    </ul>
+                </div>
+                <div class="habilidade">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Prisma ORM</li>
+                        <li>API REST</li>
+                    </ul>
+                </div>
+                <div class="habilidade">
+                    <h3>Outros</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Responsive Design</li>
+                        <li>Resolução de Problemas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- Seção de vídeo incorporado -->
+	<div class="video-largo">
+			<iframe 
+				src="https://www.youtube-nocookie.com/embed/ok-plXXHlWw"
+				title="HTML in 100 seconds" 
+				loading="lazy"
+				allowfullscreen="">
+			</iframe>
+		</div>
+		
+	<!-- Rodapé do site -->
+    <div class="rodape">
+        <p>&copy; 2025 Francisco Martins. Trabalho de ITW.</p>
+    </div>
+</body>
+</html>
