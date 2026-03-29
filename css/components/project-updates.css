@@ -1,0 +1,22 @@
+/* Updates timeline */
+.update-timeline {
+    margin-left: 25px;
+}
+
+.update-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding: 10px 20px;
+    border-left: 2px solid var(--accent);
+    margin-bottom: 10px;
+}
+
+.update-date {
+    color: var(--accent);
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+}
+
+.update-desc {
+    color: var(--text-primary);
+}

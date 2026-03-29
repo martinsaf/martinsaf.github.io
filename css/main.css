@@ -1,0 +1,36 @@
+@import url('base/layout.css');
+@import url('base/typography.css');
+
+@import url('components/header.css');
+@import url('components/intro.css');
+@import url('components/ascii.css');
+@import url('components/projects.css');
+@import url('components/mitre.css');
+@import url('components/footer.css');
+
+@import url('components/project-nav.css');
+@import url('components/project-header.css');
+@import url('components/project-sections.css');
+@import url('components/project-arch.css');
+@import url('components/project-features.css');
+@import url('components/project-rules.css');
+@import url('components/project-docs.css');
+@import url('components/project-gallery.css');
+@import url('components/project-lightbox.css');
+@import url('components/project-repo.css');
+@import url('components/project-scripts.css');
+@import url('components/project-updates.css');
+
+@import url('effects/matrix.css');
+@import url('effects/animations.css');
+@import url('responsive/media-queries.css');
+
+:root {
+    --bg-primary: #0a0e0a;        /* Fundo principal - preto esverdeado */
+    --bg-secondary: #1a2a1a;       /* Cards e secções - verde muito escuro */
+    --text-primary: #b3ffb3;       /* Texto principal - verde claro */
+    --text-secondary: #70db70;      /* Texto secundário - verde médio */
+    --accent: #32cd32;              /* Destaques - lime green */
+    --border: #2e4e2e;              /* Bordas - verde escuro */
+    --terminal-glow: 0 0 0.625rem #32cd3240;  /* Efeito de brilho */
+}

@@ -1,0 +1,45 @@
+/* Galeria de imagens */
+.category-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border);
+}
+
+.gallery-thumb {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.gallery-thumb:hover {
+    border-color: var(--accent);
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5rem var(--accent);
+}
+
+.gallery-more-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 0.25rem;
+}
+
+.gallery-more-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    transform: scale(1.05);
+}

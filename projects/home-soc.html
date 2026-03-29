@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>martinsaf | home-soc</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <!-- Navigation (OK) -->
+        <nav class="terminal-nav">
+            <a href="../index.html" class="nav-link">~/</a>
+            <span class="nav-separator">/</span>
+            <a href="index.html" class="nav-link">projects/</a>
+            <span class="nav-separator">/</span>
+            <span class="nav-current">home-soc</span>
+        </nav>
+
+        <!-- Project Header -->
+        <header class="project-header">
+            <h1>>_ home-soc/</h1>
+            <div class="project-meta">
+                <span class="meta-item">📅 última atualização: 2026-03-19</span>
+                <span class="meta-item">🔧 active</span>
+                <span class="meta-item">📦 v2.1.0</span>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section class="project-overview">
+            <h2>>_ overview</h2>
+            <p>
+                Home laboratory environment for hands-on practice with IT systems, monitoring, 
+                and security detections. A sandbox to learn and experiment with Windows & Linux 
+                administration, network configuration, automation, and security telemetry.
+            </p>
+        </section>
+
+        <!-- Network Architecture -->
+        <section class="network-arch">
+            <h2>>_ network architecture</h2>
+            <div class="arch-diagram">
+                <pre>
+    [Windows Laptop] 192.168.200.1
+            ├── (Ethernet) ── [Ubuntu Server] 192.168.200.2  (Wazuh)
+            ├── (Bridge)   ── [Windows Server VM] 192.168.200.10 ()
+            ├── (Bridge)   ── [Windows 10 VM]  192.168.200.20 (Sysmon)
+            └── (Bridge)   ── [Ubuntu VM]      192.168.200.30 (auditd)
+                </pre>
+            </div>
+        </section>
+
+        <!-- Featured Documentation -->
+        <section class="documentation">
+            <h2>>_ featured documentation</h2>
+
+            <!-- Active Directory -->
+            <div class="doc-category" data-category="active-directory">
+                <div class="doc-category-content">
+                    <h3>📁 Active Directory</h3>
+                    <p class="doc-category-desc">
+                        Montado do zero com documentação passo a passo. Gestão via PowerShell.
+                        Monitorização integrada com Wazuh para detetar criação/eliminação de utilizadores.
+                    </p>
+                    <div class="doc-list">
+                        <div class="doc-item">
+                            <span class="doc-name">ad-installation.md</span>
+                            <span class="doc-desc">Domain Controller setup, AD DS installation</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-installation.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
+                        <!-- mais docs... -->
+                    </div>
+                    <div class="category-gallery"></div>  <!-- ← JS vai preencher aqui -->
+                </div>
+            </div>
+
+            <!-- Telemetria -->
+            <div class="doc-category">
+                <h3>📡 Telemetria</h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">sysmon-config.md</span>
+                        <span class="doc-desc">Sysmon modular config (Olaf Hartong), validation</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/sysmon-config.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">auditd-config.md</span>
+                        <span class="doc-desc">auditd rules for sudo, identity changes, SSH config</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/linux/auditd-config.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">windows-endpoint.md</span>
+                        <span class="doc-desc">Windows telemetry stack: Sysmon + Wazuh agent</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/windows-endpoint.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deteções & Troubleshooting -->
+            <div class="doc-category">
+                <h3>⚠️ Deteções & Troubleshooting</h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">ssh-bruteforce-attack.md</span>
+                        <span class="doc-desc">Attack simulation + Wazuh detection walkthrough</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/troubleshooting/ssh-bruteforce-attack.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">wazuh-agent-disconnected.md</span>
+                        <span class="doc-desc">Diagnostic process: network, service, logs</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/troubleshooting/wazuh-agent-disconnected.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infraestrutura -->
+            <div class="doc-category">
+                <h3>🌐 Infraestrutura</h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">lab-network-architecture.md</span>
+                        <span class="doc-desc">Dual-homed servers, isolated subnet, bridging</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/networking/lab-network-architecture.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="repo-info">
+            <h2>>_ quick links</h2>
+            <a href="https://github.com/martinsaf/home-soc" class="terminal-link big-link" target="_blank">
+                [ git clone https://github.com/martinsaf/home-soc ]
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            <div class="footer-links">
+                <a href="../index.html">[home]</a>
+                <a href="index.html">[projects]</a>
+                <a href="https://github.com/martinsaf/home-soc">[github]</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Lightbox com setas -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+        <span class="lightbox-prev" onclick="prevImage()">❮</span>
+        <img id="lightbox-img" src="">
+        <span class="lightbox-next" onclick="nextImage()">❯</span>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <script src="../js/particles.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

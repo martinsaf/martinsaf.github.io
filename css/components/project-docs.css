@@ -1,0 +1,43 @@
+/* Documentation List - base */
+.doc-category {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.doc-category:hover {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.doc-category h3 {
+    color: var(--accent);
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+}
+
+.doc-category-desc {
+    color: var(--text-primary);
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+}
+
+.doc-category .doc-list {
+    margin: 0;
+}
+
+.doc-category .doc-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    gap: 15px;
+}
+
+.doc-category .doc-item:last-child {
+    border-bottom: none;
+}

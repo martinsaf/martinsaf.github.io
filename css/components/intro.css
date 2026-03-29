@@ -1,0 +1,37 @@
+/* Intro section */
+.intro {
+    margin: 2.5rem 0 3.125rem 0;
+    padding-left: 1.5625rem;
+}
+
+.typing-effect {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0.625rem 0;
+    color: var(--text-primary);
+    text-shadow: 0 0 5px var(--accent);
+}
+
+.typing-effect:first-child {
+    color: var(--accent);
+    font-size: 1.3rem;
+}
+
+.typing-effect:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 0.625rem;
+    margin-bottom: 0.9375rem;
+}
+
+.bio {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-top: 0.9375rem;
+    padding-top: 0.625rem;
+    font-style: italic;
+    opacity: 0.9;
+    text-align: right;
+}

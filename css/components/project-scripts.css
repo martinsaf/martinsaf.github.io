@@ -1,0 +1,36 @@
+/* Scripts section */
+.scripts-list {
+    margin-left: 25px;
+}
+
+.script-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+}
+
+.script-item:hover {
+    border-color: var(--accent);
+    background-color: var(--bg-secondary);
+}
+
+.script-name {
+    color: var(--accent);
+    font-family: 'Fira Code', monospace;
+}
+
+.script-desc {
+    color: var(--text-primary);
+}
+
+.script-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.script-link:hover {
+    color: var(--accent);
+}

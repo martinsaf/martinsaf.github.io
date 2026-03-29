@@ -1,0 +1,191 @@
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .terminal-container {
+        max-width: 90%;
+        padding: 0.9375rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .ascii-art {
+        font-size: 2rem;
+    }
+
+    .typing-effect:nth-child(2) {
+        font-size: 1.6rem;
+    }
+}
+
+/* Telemóveis (até 768px) */
+@media screen and (max-width: 768px) {
+    .terminal-container {
+        max-width: 95%;
+        padding: 0.625rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9375rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 0.625rem;
+        width: 100%;
+    }
+
+    .terminal-link {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tag {
+        font-size: 0.85rem;
+        padding: 0.1875rem 0.5rem;
+    }
+
+    .mitre-cloud {
+        justify-content: center;
+    }
+
+    .mitre-tag {
+        font-size: 0.9rem;
+        padding: 0.1875rem 0.5rem;
+    }
+
+    .ascii-art {
+        font-size: 1.5rem;
+        margin: 1.25rem 0;
+    }
+
+    .typing-effect {
+        font-size: 1.2rem;
+    }
+
+    .typing-effect:nth-child(2) {
+        font-size: 1.4rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.625rem;
+        align-items: center;
+    }
+
+    .footer-output {
+        margin: 0.9375rem 0 1.25rem 0.625rem;
+        font-size: 1rem;
+    }
+
+    .prompt {
+        font-size: 1rem;
+    }
+
+    /* Project pages responsive */
+    .project-meta {
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+
+    .rule-row {
+        grid-template-columns: 1fr;
+        gap: 0.625rem;
+    }
+
+    .doc-item {
+        grid-template-columns: 1fr;
+        gap: 0.625rem;
+        text-align: left;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .repo-stats {
+        flex-direction: column;
+        gap: 0.9375rem;
+        width: 100%;
+    }
+
+    .big-link {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Repository info link */
+    .repo-info .big-link {
+        width: calc(100% - 0.9375rem);  /* Ajustar para mobile */
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Telemóveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    .ascii-art {
+        font-size: 1.2rem;
+    }
+
+    .typing-effect:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .project-card {
+        padding: 0.9375rem;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+
+    .terminal-link {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mitre-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-line {
+        flex-wrap: wrap;
+    }
+
+    .project-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .arch-diagram pre {
+        font-size: 0.9rem;
+        padding: 0.9375rem;
+    }
+}

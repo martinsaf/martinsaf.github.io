@@ -1,0 +1,17 @@
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Fira Code', 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+.terminal-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--glow);
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}

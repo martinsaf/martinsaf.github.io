@@ -1,0 +1,15 @@
+.ascii-art {
+    color: var(--accent);
+    font-family: 'Courier New', 'Fira Code', monospace;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 2.5rem 0 1.875rem 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 0 10px var(--accent),
+                 0 0 20px var(--accent);
+    animation: softGlow 4s infinite;
+    white-space: pre;
+    letter-spacing: 0;
+}

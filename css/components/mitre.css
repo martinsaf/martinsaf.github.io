@@ -1,0 +1,85 @@
+/* MITRE ATT&CK Mapping */
+.mitre-preview {
+    margin: 3.75rem 0;
+}
+
+.mitre-preview h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.875rem;
+    color: var(--text-primary);
+    padding-left: 0.9375rem;
+}
+
+.mitre-section {
+    margin-bottom: 2.5rem;
+}
+
+.mitre-section h3 {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    margin-bottom: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+
+.mitre-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    padding-left: 0.9375rem;
+}
+
+.mitre-tag {
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.25rem 0.625rem;
+    margin: 0.25rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 1em;
+    cursor: help;
+    transition: all 0.2s;
+}
+
+.mitre-tag:hover {
+    border-color: var(--accent);
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0 0.5rem var(--accent)
+}
+
+.mitre-tag.implemented {
+    border-color: var(--accent);
+    background-color: rgba(50, 205, 50, 0.1);
+}
+
+.mitre-tag.detected {
+    border-color: var(--text-secondary);
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+.mitre-tag.implemented:hover::after {
+    content: " (wazuh rule)";
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.mitre-tag.detected:hover::after {
+    content: " (investigation)";
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.mitre-source {
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 0.3125rem;
+}
+
+.mitre-details {
+    margin-top: 0.9375rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border);
+    padding-top: 0.625rem;
+}

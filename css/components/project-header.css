@@ -1,0 +1,25 @@
+/* Project Header */
+.project-header {
+    margin-bottom: 40px;
+}
+
+.project-header h1 {
+    font-size: 2.2em;
+    color: var(--accent);
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.project-meta {
+    display: flex;
+    gap: 20px;
+    color: var(--text-secondary);
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

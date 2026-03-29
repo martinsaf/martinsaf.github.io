@@ -1,0 +1,32 @@
+/* Sections base */
+.project-overview,
+.network-arch,
+.key-features,
+.detection-rules,
+.documentation,
+.repo-info {
+    margin: 50px 0;
+}
+
+.project-overview h2,
+.network-arch h2,
+.key-features h2,
+.detection-rules h2,
+.documentation h2,
+.repo-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+    padding-left: 15px;
+}
+
+.detection-rules h3 {
+    font-size: 1.7em;
+}
+
+.project-overview p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--text-primary);
+    padding-left: 25px;
+}

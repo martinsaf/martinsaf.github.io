@@ -1,0 +1,12 @@
+/* Network Architecture */
+.arch-diagram pre {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
+    color: var(--text-primary);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-left: 25px;
+}
