@@ -5,7 +5,7 @@
 .detection-rules,
 .documentation,
 .repo-info {
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 
 .project-overview h2,
@@ -14,19 +14,19 @@
 .detection-rules h2,
 .documentation h2,
 .repo-info h2 {
-    font-size: 1.8em;
-    margin-bottom: 25px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5625rem;
     color: var(--text-primary);
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 .detection-rules h3 {
-    font-size: 1.7em;
+    font-size: 1.7rem;
 }
 
 .project-overview p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-primary);
-    padding-left: 25px;
+    padding-left: 1.5625rem;
 }

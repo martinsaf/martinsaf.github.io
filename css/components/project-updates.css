@@ -1,14 +1,14 @@
 /* Updates timeline */
 .update-timeline {
-    margin-left: 25px;
+    margin-left: 1.5625rem;
 }
 
 .update-item {
     display: grid;
-    grid-template-columns: 120px 1fr;
-    padding: 10px 20px;
-    border-left: 2px solid var(--accent);
-    margin-bottom: 10px;
+    grid-template-columns: 7.5rem 1fr;
+    padding: 0.625rem 1.25rem;
+    border-left: 0.125rem solid var(--accent);
+    margin-bottom: 0.625rem;
 }
 
 .update-date {

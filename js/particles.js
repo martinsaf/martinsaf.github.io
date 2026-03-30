@@ -10,14 +10,14 @@ class MatrixParticles {
     // ... implementation
 }
 
-// Matrix Background - "Ouros" verticais
+// Matrix Background - vertical "Diamonds"
 class MatrixBackground {
     constructor() {
         this.canvas = document.createElement('canvas');
         this.ctx = this.canvas.getContext('2d');
         this.canvas.id = 'matrix-bg';
         
-        // Insere no body, mas com z-index negativo no CSS
+        // Insert into body, but with negative z-index in CSS
         document.body.insertBefore(this.canvas, document.body.firstChild);
         
         this.symbols = ['◊', '⬦', '⬩', '♦', '♢'];
@@ -38,16 +38,16 @@ class MatrixBackground {
     }
     
     animate() {
-        // Fundo com fade muito lento (quase impercetível)
+        // Background very slow (almost imperceptible)
         this.ctx.fillStyle = 'rgba(10, 14, 10, 0.03)';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         
-        // Desenha os símbolos
+        // Draw symbols
         this.ctx.fillStyle = '#00ff37';
         this.ctx.font = `${this.fontSize}px 'Fira Code', monospace`;
         this.ctx.shadowColor = '#285c28';
-        this.ctx.shadowBlur = 8;
-        this.ctx.globalAlpha = 0.25;
+        this.ctx.shadowBlur = 4;
+        this.ctx.globalAlpha = 0.45;
         
         for (let i = 0; i < this.drops.length; i++) {
             const symbol = this.symbols[Math.floor(Math.random() * this.symbols.length)];
@@ -66,12 +66,7 @@ class MatrixBackground {
     }
 }
 
-// Iniciar quando a página carregar
-document.addEventListener('DOMContentLoaded', () => {
-    new MatrixBackground();
-});
-
-// Iniciar quando a página carregar
+// Begin when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     new MatrixBackground();
 });

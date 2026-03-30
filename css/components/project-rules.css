@@ -1,6 +1,6 @@
 /* Rules Table */
 .rules-table {
-    margin-left: 25px;
+    margin-left: 1.5625rem;
     border: 1px solid var(--border);
 }
 
@@ -8,9 +8,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr auto;
     align-items: center;
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem;
     border-bottom: 1px solid var(--border);
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .rule-row:last-child {
@@ -39,5 +39,5 @@
 
 .rule-link:hover {
     color: var(--accent);
-    text-shadow: 0 0 5px var(--accent);
+    text-shadow: 0 0 0.3125rem var(--accent);
 }

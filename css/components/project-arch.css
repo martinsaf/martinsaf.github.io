@@ -2,11 +2,11 @@
 .arch-diagram pre {
     background-color: var(--bg-secondary);
     border: 1px solid var(--border);
-    padding: 20px;
+    padding: 1.25rem;
     font-family: 'Fira Code', monospace;
     color: var(--text-primary);
     overflow-x: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
 }

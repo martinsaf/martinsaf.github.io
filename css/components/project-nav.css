@@ -2,11 +2,11 @@
 .terminal-nav {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    gap: 0.3125rem;
+    margin-bottom: 1.875rem;
+    padding-bottom: 0.625rem;
     border-bottom: 1px solid var(--border);
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .nav-link {
@@ -17,7 +17,7 @@
 
 .nav-link:hover {
     text-decoration: underline;
-    text-shadow: 0 0 5px var(--accent);
+    text-shadow: 0 0 0.3125rem var(--accent);
 }
 
 .nav-separator {

@@ -18,15 +18,15 @@
     max-height: 90%;
     object-fit: contain;
     border: 2px solid var(--accent);
-    box-shadow: 0 0 30px rgba(50, 205, 50, 0.3);
+    box-shadow: 0 0 1.875rem rgba(50, 205, 50, 0.3);
 }
 
 .lightbox-close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 1.25rem;
+    right: 1.875rem;
     color: var(--text-primary);
-    font-size: 2em;
+    font-size: 2rem;
     cursor: pointer;
     font-family: monospace;
 }
@@ -41,37 +41,37 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-primary);
-    font-size: 3em;
+    font-size: 3rem;
     cursor: pointer;
-    padding: 20px;
+    padding: 1.25rem;
     user-select: none;
     z-index: 1001;
     transition: all 0.2s;
 }
 
 .lightbox-prev {
-    left: 20px;
+    left: 1.25rem;
 }
 
 .lightbox-next {
-    right: 20px;
+    right: 1.25rem;
 }
 
 .lightbox-prev:hover,
 .lightbox-next:hover {
     color: var(--accent);
-    text-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 0.625rem var(--accent);
 }
 
 .lightbox-counter {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
     color: var(--text-secondary);
-    font-size: 0.9em;
+    font-size: 0.9rem;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 12px;
-    border-radius: 20px;
+    padding: 0.3125rem 0.75rem;
+    border-radius: 1.25rem;
     font-family: 'Fira Code', monospace;
 }

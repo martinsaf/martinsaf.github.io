@@ -1,4 +1,4 @@
-// ===== DADOS DAS IMAGENS POR CATEGORIA =====
+// ===== DATA FROM IMAGES PER CATEGORY =====
 
 const categoryImages = {
     "active-directory": [
@@ -16,16 +16,14 @@ const categoryImages = {
         "wazuh-dc01-dashboard-details.jpg",
         "wazuh-ossec-conf-security-log.jpg"
     ],
-    "linux": [
-        "linux-domain-user-login.jpg"
-    ]
+    // "another": []
 };
 
-// ===== VARIÁVEIS GLOBAIS =====
+// ===== GLOBAL VARIABLES =====
 let currentImages = [];      // imagens da categoria atual
 let currentIndex = 0;        // índice da imagem atual
 
-// ===== FUNÇÕES DO LIGHTBOX COM SETAS =====
+// ===== FUNCTIONS FOR LIGHTBOX WITH ARROWS =====
 function openLightbox(images, index) {
     currentImages = images;
     currentIndex = index;
@@ -46,7 +44,7 @@ function nextImage() {
     if (currentIndex < currentImages.length - 1) {
         currentIndex++;
     } else {
-        currentIndex = 0;  // volta ao início
+        currentIndex = 0;  // back to first image
     }
     updateLightboxImage();
 }
@@ -55,7 +53,7 @@ function prevImage() {
     if (currentIndex > 0) {
         currentIndex--;
     } else {
-        currentIndex = currentImages.length - 1;  // vai para o fim
+        currentIndex = currentImages.length - 1;  // go to the last image
     }
     updateLightboxImage();
 }
@@ -64,7 +62,7 @@ function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
 
-// ===== GERAR GALERIAS =====
+// ===== GENERATE GALLERIES =====
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.doc-category').forEach(cat => {
         const category = cat.dataset.category;
@@ -76,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 `https://github.com/martinsaf/home-soc/raw/main/docs/${category}/imgs/${img}`
             );
             
-            const VISIBLE_COUNT = 4;  // ← número de miniaturas visíveis
+            const VISIBLE_COUNT = 4;  // number osf thumbnails to show before "see more"
             const hasMore = imageUrls.length > VISIBLE_COUNT;
             
-            // Cria miniaturas (só as primeiras VISIBLE_COUNT)
+            // create thumbnails (only the first VISIBLE_COUNT)
             imageUrls.slice(0, VISIBLE_COUNT).forEach((url, idx) => {
                 const thumb = document.createElement('img');
                 thumb.src = url;
@@ -88,13 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 gallery.appendChild(thumb);
             });
             
-            // Se houver mais imagens, adiciona botão "ver mais"
+            // If there are more images, add a "see more" button
             if (hasMore) {
                 const moreBtn = document.createElement('button');
                 moreBtn.textContent = `+${imageUrls.length - VISIBLE_COUNT} more`;
                 moreBtn.classList.add('gallery-more-btn');
                 moreBtn.onclick = () => {
-                    // Opção: abre lightbox na primeira imagem
+                    // option: opens lightbox on the first image
                     openLightbox(imageUrls, 0);
                 };
                 gallery.appendChild(moreBtn);
@@ -105,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ===== EVENTOS DO TECLADO =====
+// ===== EVENTS FROM KEYBOARD =====
 document.addEventListener('keydown', function(e) {
     const lightbox = document.getElementById('lightbox');
     if (lightbox.style.display === 'flex') {
