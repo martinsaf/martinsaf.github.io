@@ -7,6 +7,120 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <div class="terminal-container">
+        <!-- Navigation -->
+        <nav class="terminal-nav">
+            <a href="../index.html" class="nav-link">~/</a>
+            <span class="nav-separator">/</span>
+            <a href="index.html" class="nav-link">projects/</a>
+            <span class="nav-separator">/</span>
+            <span class="nav-current">cheat-sheet</span>
+        </nav>
+
+        <!-- Project Header -->
+        <header class="project-header">
+            <h1>>_ cheat-sheet/</h1>
+            <div class="project-meta">
+                <span class="meta-item">🔧 active</span>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section class="project-overview">
+            <h2>>_ overview</h2>
+            <p>
+               A collection of commands, configurations, and practical references for Security Operations, Threat Hunting, and Network Administration. 
+               A knowledge base for quick troubleshooting.
+            </p>
+        </section>
+
+        <section class="documentation">
+            <h2>>_ categories</h2>
+
+            <!-- Networking Category -->
+            <div class="doc-category">
+                <div class="doc-category-content">
+                    <h3>📡 Networking</h3>
+                    
+                    <div class="doc-list">
+                        <div class="doc-item">
+                            <span class="doc-name">BIND9 DNS Lab</span>
+                            <span class="doc-desc">Primary, secondary, zone delegation</span>
+                            <a href="https://github.com/martinsaf/CheatSheet/tree/main/networking/dns" class="doc-link" target="_blank">[read]</a>
+                        </div>
+                        
+                        <div class="doc-item">
+                            <span class="doc-name">Apache Web Server</span>
+                            <span class="doc-desc">Virtual hosts, SSL/TLS config, logging</span>
+                            <a href="https://github.com/martinsaf/CheatSheet/tree/main/networking/http" class="doc-link" target="_blank">[read]</a>
+                        </div>
+
+                    </div>
+                    <div class="category-gallery"></div>  <!-- ← JS -->
+                </div>
+            </div>
+
+            <!-- Security Tools -->
+            <div class="doc-category">
+                <h3>🔐 Security Tools</h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">Sysmon Threat Hunting</span>
+                        <span class="doc-desc">Mimikatz, Metasploit, filtering</span>
+                        <a href="https://github.com/martinsaf/CheatSheet/tree/main/sysinternals" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">Wireshark</span>
+                        <span class="doc-desc">Capture & display filters, examples</span>
+                        
+                        <a href="https://github.com/martinsaf/CheatSheet/tree/main/wireshsark" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">TShark</span>
+                        <span class="doc-desc">Capture & display filters, examples</span>
+                        <a href="https://github.com/martinsaf/CheatSheet/tree/main/tshark" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detections & Troubleshooting -->
+            <div class="doc-category">
+                <h3>🪟 Windows & 🐧 Linux</h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">PowerShell Event Logs</span>
+                        <span class="doc-desc">Get-WinEvent, XPath, Event IDs</span>
+                        <a href="#windows" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">Linux Basic Commands</span>
+                        <span class="doc-desc">Diagnostic process: network, service, logs</span>
+                        <a href="https://github.com/martinsaf/CheatSheet/tree/main/linux" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Quick Links -->
+        <section class="repo-info">
+            <h2>>_ quick links</h2>
+            <a href="https://github.com/martinsaf/home-soc" class="terminal-link big-link" target="_blank">
+                [ git clone https://github.com/martinsaf/home-soc ]
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            <div class="footer-links">
+                <a href="../index.html">[home]</a>
+                <a href="index.html">[projects]</a>
+                <a href="https://github.com/martinsaf/CheatSheet">[github]</a>
+            </div>
+        </footer>
+    </div>
     <script src="../js/under-construction.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

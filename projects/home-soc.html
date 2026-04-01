@@ -58,8 +58,8 @@
                 <div class="doc-category-content">
                     <h3>📁 Active Directory</h3>
                     <p class="doc-category-desc">
-                        Montado do zero com documentação passo a passo. Gestão via PowerShell.
-                        Monitorização integrada com Wazuh para detetar criação/eliminação de utilizadores.
+                        Built from scratch with step-by-step documentation.
+                        Integrated monitoring with Wazuh to detect user creation/deletion.
                     </p>
                     <div class="doc-list">
                         <div class="doc-item">
@@ -67,37 +67,108 @@
                             <span class="doc-desc">Domain Controller setup, AD DS installation</span>
                             <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-installation.md" class="doc-link" target="_blank">[read]</a>
                         </div>
-                        <!-- mais docs... -->
+
+                        <!-- more docs... -->
+
+                        <div class="doc-item">
+                            <span class="doc-name">ad-users-groups.md</span>
+                            <span class="doc-desc">Create Organizational Units (OUs), users, and groups</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-users-groups.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
+
+                        <div class="doc-item">
+                            <span class="doc-name">ad-join-windows-client.md</span>
+                            <span class="doc-desc">Join a Windows 10 machine to the domain and test login</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-join-windows-client.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
+
+                        <div class="doc-item">
+                            <span class="doc-name">ad-group-policy.md</span>
+                            <span class="doc-desc">Configure Group Policy Objects (GPOs) to manage users/computers</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-group-policy.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
+
+                        <div class="doc-item">
+                            <span class="doc-name">ad-integration-wazuh.md</span>
+                            <span class="doc-desc">Monitor AD security events with Wazuh</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-integration-wazuh.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
+
+                        <div class="doc-item">
+                            <span class="doc-name">ad-troubleshooting.md</span>
+                            <span class="doc-desc">Common issues and solutions</span>
+                            <a href="https://github.com/martinsaf/home-soc/blob/main/docs/active-directory/ad-troubleshooting.md" class="doc-link" target="_blank">[read]</a>
+                        </div>
                     </div>
-                    <div class="category-gallery"></div>  <!-- ← JS vai preencher aqui -->
+                    <div class="category-gallery"></div>  <!-- JS -->
                 </div>
             </div>
 
-            <!-- Telemetria -->
+            <!-- Email -->
             <div class="doc-category">
-                <h3>📡 Telemetria</h3>
+                <h3>📧 RainLoop Webmail</h3>
+                <div class="doc-item">
+                    <span class="doc-name">rainloop-setup.md</span>
+                    <span class="doc-desc">Deploy a lightweight webmail client using Docker on Windows, accessible from the lab network and localhost</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/email/rainloop-setup.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+                <div class="doc-item">
+                    <span class="doc-name">hMailServer-setup-on-DC01.md</span>
+                    <span class="doc-desc">Install and configure hMailServer on the Domain Controller to provide IMAP/SMTP services for the lab domain `lab.local`. </span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/email/hMailServer-setup-on-DC01.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+            </div>
+
+            <!-- ITSM -->
+            <div class="doc-category">
+                <h3>🤹 Gestionnaire Libre de Parc Informatique / Free IT Equipment Manager</h3>
+                <div class="doc-item">
+                    <span class="doc-name">glpi-docker-setup.md</span>
+                    <span class="doc-desc">🚧🏗️🚧</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/itsm/glpi-docker-setup.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+                <div class="doc-item">
+                    <span class="doc-name">cmdb.md</span>
+                    <span class="doc-desc">🚧🏗️🚧</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/itsm/cmdb.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="doc-category">
+                <h3>🐧 Linux</h3>
+                <div class="doc-item">
+                    <span class="doc-name">auditd-config.md</span>
+                    <span class="doc-desc">Monitor privilege escalation, identity changes, and critical file access on the Ubuntu endpoint for Wazuh-based detection</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/itsm/auditd-config.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+                <div class="doc-item">
+                    <span class="doc-name">ad-integration-linux.md</span>
+                    <span class="doc-desc">Join an Ubuntu 22.04 VM to the Windows domain `lab.local` to enable centralized authentication for Linux endpoints</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/itsm/ad-integration-linux.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+                <div class="doc-item">
+                    <span class="doc-name">ad-integration-ubuntu-server.md</span>
+                    <span class="doc-desc">Join the physical Ubuntu Server (`192.168.200.2`) to the `lab.local` domain to enable centralized authentication and management</span>
+                    <a href="https://github.com/martinsaf/home-soc/blob/main/docs/itsm/ad-integration-ubuntu-server.md" class="doc-link" target="_blank">[read]</a>
+                </div>
+            </div>
+
+            <!-- Networking -->
+            <div class="doc-category">
+                <h3>🌐 Networking</h3>
                 <div class="doc-list">
                     <div class="doc-item">
-                        <span class="doc-name">sysmon-config.md</span>
-                        <span class="doc-desc">Sysmon modular config (Olaf Hartong), validation</span>
-                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/sysmon-config.md" class="doc-link" target="_blank">[read]</a>
-                    </div>
-                    <div class="doc-item">
-                        <span class="doc-name">auditd-config.md</span>
-                        <span class="doc-desc">auditd rules for sudo, identity changes, SSH config</span>
-                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/linux/auditd-config.md" class="doc-link" target="_blank">[read]</a>
-                    </div>
-                    <div class="doc-item">
-                        <span class="doc-name">windows-endpoint.md</span>
-                        <span class="doc-desc">Windows telemetry stack: Sysmon + Wazuh agent</span>
-                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/windows-endpoint.md" class="doc-link" target="_blank">[read]</a>
+                        <span class="doc-name">lab-network-architecture.md</span>
+                        <span class="doc-desc">Dual-homed servers, isolated subnet, bridging</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/networking/lab-network-architecture.md" class="doc-link" target="_blank">[read]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Detections & Troubleshooting -->
+            <!-- Troubleshooting -->
             <div class="doc-category">
-                <h3>⚠️ Detections & Troubleshooting</h3>
+                <h3>⚠️ Troubleshooting</h3>
                 <div class="doc-list">
                     <div class="doc-item">
                         <span class="doc-name">ssh-bruteforce-attack.md</span>
@@ -109,20 +180,49 @@
                         <span class="doc-desc">Diagnostic process: network, service, logs</span>
                         <a href="https://github.com/martinsaf/home-soc/blob/main/docs/troubleshooting/wazuh-agent-disconnected.md" class="doc-link" target="_blank">[read]</a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Infrastructure -->
-            <div class="doc-category">
-                <h3>🌐 Infrastructure</h3>
-                <div class="doc-list">
                     <div class="doc-item">
-                        <span class="doc-name">lab-network-architecture.md</span>
-                        <span class="doc-desc">Dual-homed servers, isolated subnet, bridging</span>
-                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/networking/lab-network-architecture.md" class="doc-link" target="_blank">[read]</a>
+                        <span class="doc-name">rainloop-short-authentication-problem.md</span>
+                        <span class="doc-desc">The RainLoop image `ghcr.io/xrstf/rainloop:v1.17.0` has a bug or incompatibility with the `short_login` feature</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/troubleshooting/rainloop-short-authentication-problem.md" class="doc-link" target="_blank">[read]</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Windows -->
+            <div class="doc-category">
+                <h3>🪟 Windows </h3>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span class="doc-name">sysmon-config.md</span>
+                        <span class="doc-desc">Sysmon modular config (Olaf Hartong), validation</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/sysmon-config.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">sysmon-validation.md</span>
+                        <span class="doc-desc">Confirm that Sysmon is generating expected events and that Wazuh is receiving them</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/sysmon-validation.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                    <div class="doc-item">
+                        <span class="doc-name">windows-endpoint.md</span>
+                        <span class="doc-desc">Windows telemetry stack: Sysmon + Wazuh agent</span>
+                        <a href="https://github.com/martinsaf/home-soc/blob/main/docs/windows/windows-endpoint.md" class="doc-link" target="_blank">[read]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- monitoring -->
+        <section class="documentation">
+            <h2>>_ featured monitoring</h2>
+            <span class="doc-desc"></span>
+            <div class="doc-category" data-category="active-#monitoring">
+                <div class="doc-category-content">
+                    <h3>🚧🏗️🚧</h3>
+                    <p class="doc-category-desc">
+                    </p>
+                </div>
+            </div>
+
         </section>
 
         <!-- Quick Links -->
